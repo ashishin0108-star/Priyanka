@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "inverse-primary": "#ffb4a8",
+          "inverse-on-surface": "#f2f1ec",
+          "secondary-fixed": "#ffdcc5",
+          "surface-container-lowest": "#ffffff",
+          "surface": "#fbf9f4",
+          "on-tertiary": "#ffffff",
+          "primary-fixed": "#ffdad4",
+          "tertiary-fixed-dim": "#cbc5c2",
+          "primary": "#a83223",
+          "on-error-container": "#93000a",
+          "on-secondary": "#ffffff",
+          "surface-tint": "#ab3425",
+          "on-secondary-fixed-variant": "#713700",
+          "on-surface": "#1b1c19",
+          "surface-variant": "#e4e2dd",
+          "on-tertiary-fixed-variant": "#494644",
+          "on-error": "#ffffff",
+          "on-secondary-fixed": "#301400",
+          "error": "#ba1a1a",
+          "on-surface-variant": "#58413d",
+          "surface-container-high": "#eae8e3",
+          "primary-fixed-dim": "#ffb4a8",
+          "surface-bright": "#fbf9f4",
+          "error-container": "#ffdad6",
+          "tertiary": "#5f5b59",
+          "tertiary-fixed": "#e7e1de",
+          "surface-dim": "#dbdad5",
+          "primary-container": "#c94a38",
+          "on-background": "#1b1c19",
+          "outline-variant": "#e0bfba",
+          "on-primary-fixed": "#410100",
+          "background": "#fbf9f4",
+          "on-primary": "#ffffff",
+          "surface-container-low": "#f5f3ee",
+          "outline": "#8c716c",
+          "secondary-fixed-dim": "#ffb783",
+          "on-primary-fixed-variant": "#8a1c10",
+          "on-secondary-container": "#6c3400",
+          "on-tertiary-fixed": "#1d1b19",
+          "tertiary-container": "#787471",
+          "on-primary-container": "#fffbff",
+          "inverse-surface": "#30312e",
+          "on-tertiary-container": "#fffbff",
+          "surface-container-highest": "#e4e2dd",
+          "surface-container": "#f0eee9",
+          "secondary": "#944a00",
+          "secondary-container": "#ff9742"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "space-3xl": "6rem",
+          "space-xl": "2.5rem",
+          "margin": "4rem",
+          "space-lg": "1.5rem",
+          "space-xs": "0.25rem",
+          "gutter-mobile": "1rem",
+          "margin-mobile": "1.25rem",
+          "gutter": "2rem",
+          "space-md": "1rem",
+          "space-2xl": "4rem",
+          "space-sm": "0.5rem"
+        },
+        "fontFamily": {
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-xl-mobile": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "headline-xl": [
+            "Playfair Display"
+          ],
+          "display-mobile": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display": [
+            "Playfair Display"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ]
+        },
+        "fontSize": {
+          "headline-md": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "0em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-sm": [
+            "18px",
+            {
+              "lineHeight": "26px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-xl-mobile": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-lg": [
+            "14px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg-mobile": [
+            "26px",
+            {
+              "lineHeight": "34px",
+              "letterSpacing": "0em",
+              "fontWeight": "500"
+            }
+          ],
+          "headline-xl": [
+            "48px",
+            {
+              "lineHeight": "56px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "400"
+            }
+          ],
+          "display-mobile": [
+            "44px",
+            {
+              "lineHeight": "52px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "14px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "600"
+            }
+          ],
+          "display": [
+            "72px",
+            {
+              "lineHeight": "80px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-20 max-w-7xl mx-auto px-margin-mobile md:px-space-xl lg:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md shrink-0"><a class="flex items-center gap-space-sm group" data-path="selected-work" href="#"><img alt="Priyanka Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UovHbDtSTLMb8y-W_1BNRJngj2WHUf4s1LU7WzjwmOludumTBwT-J3P4zqgQetUSIj9yuGr1AZM43Nl1xdVRlqEajdfwNyMRoN3jI8cE87wmB_VB7P3H94ANdWrVpOeRjYbyNxacSCrxoF7tw5Pqxx6WfwPi-It45bof8Or1TQzNoSwE3NJfKpfgI212dCQwAbY3QrN3y_evIe2bGEcKGRLpicUMyeuCricQLvTBti_37MyiTvdAZ_OPJA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight group-hover:text-primary transition-colors">Priyanka</span><span class="font-label-sm text-label-sm uppercase text-tertiary hidden sm:inline-block">Design &amp; Direction</span></div></a><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm"><span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span><span>Available for Q3/Q4 Projects</span></div></div><nav class="hidden lg:flex items-center gap-space-xs p-space-xs rounded-xl bg-surface-container-low" data-active-classes="bg-surface-container-highest text-on-surface font-semibold rounded-lg"><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-surface-container-highest text-on-surface font-semibold rounded-lg" data-path="selected-work" href="#">Selected Work</a><a class="font-label-lg text-label-lg px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="about" href="#">About</a><a class="font-label-lg text-label-lg px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="experience" href="#">Experience</a><a class="font-label-lg text-label-lg px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="process" href="#">Process</a><a class="font-label-lg text-label-lg px-space-md py-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md shrink-0"><a class="inline-flex items-center justify-center font-label-lg text-label-lg bg-inverse-surface text-inverse-on-surface px-space-lg py-space-sm rounded-lg hover:bg-primary transition-colors shadow-[0_2px_8px_rgba(28,26,24,0.08)]" data-path="contact" href="#">Get in Touch</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-surface-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzTx-w39ICn-MrQLyitT70EAE9J6HBnueFqm47KJAKZykTpJptatlIKGYRWvh5usF-ANAx-sqV7_wp4ITLonEeL4BfBxzp9X606cDNwsF-yf6PUs2epLEJQIRs8iqKqZVC828F75DfKaLA7JJzupWAVYwzUfWDQo33RMUqeGpNR1sEhIeYthfhiut4H0gNW4hcNpoqNY_cBOwKPZG0_7jyrQLiaeoRyVu2-jPTxg-Ak7tlGS8dMw8SYw"/></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- HERO SECTION -->
+<section class="relative w-full max-w-7xl mx-auto px-margin-mobile md:px-space-xl lg:px-margin pt-space-xl md:pt-space-2xl pb-space-2xl">
+<!-- Status Chip & Decorative Metadata Header -->
+<div class="flex flex-wrap items-center justify-between gap-space-md mb-space-xl">
+<div class="inline-flex items-center gap-space-sm px-space-md py-space-xs rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="text-on-surface font-semibold tracking-wide">Available for Select Freelance &amp; Advisory Roles</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-lg text-tertiary font-label-sm text-label-sm tracking-widest uppercase">
+<span>San Francisco · London</span>
+<span>§ Portfolio Vol. VII</span>
+</div>
+</div>
+<!-- Editorial Hero Layout: Asymmetric 12-Column -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left Editorial Column (7 cols) -->
+<div class="lg:col-span-7 flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-space-sm">Principal Designer &amp; Art Director</span>
+<h1 class="font-headline-xl text-headline-xl text-on-surface leading-tight tracking-tight mb-space-lg">
+          Crafting intentional digital products, brand experiences, and design systems for ambitious founders.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-space-xl leading-relaxed">
+          8+ years blending human-centered product craft with artful visual storytelling. Previously scaling design at Stripe, Linear ecosystem, and early-stage AI ventures.
+        </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-md">
+<a class="inline-flex items-center gap-space-sm bg-inverse-surface text-inverse-on-surface px-space-lg py-space-sm rounded-lg hover:bg-primary transition-all duration-300 font-label-lg text-label-lg shadow-md group" href="#selected-work">
+<span>Explore Selected Projects</span>
+<span class="material-symbols-outlined text-lg group-hover:translate-y-0.5 transition-transform">arrow_downward</span>
+</a>
+<a class="inline-flex items-center gap-space-sm bg-surface-container-high text-on-surface px-space-lg py-space-sm rounded-lg hover:bg-surface-variant transition-colors font-label-lg text-label-lg shadow-sm" href="#inquiry">
+<span class="material-symbols-outlined text-lg">description</span>
+<span>Download Resume (PDF)</span>
+</a>
+</div>
+</div>
+<!-- Right Column: Tactile Portrait Canvas (5 cols) -->
+<div class="lg:col-span-5 relative mt-space-xl lg:mt-0">
+<div class="relative bg-surface-container-lowest p-space-md rounded-xl shadow-[0_16px_36px_-8px_rgba(28,26,24,0.06)]">
+<div class="relative aspect-square overflow-hidden rounded-lg bg-surface-container">
+<img alt="Editorial portrait of Priyanka Sharma" class="w-full h-full object-cover object-center grayscale hover:grayscale-0 transition-all duration-700 ease-out scale-[1.02] hover:scale-100" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzTx-w39ICn-MrQLyitT70EAE9J6HBnueFqm47KJAKZykTpJptatlIKGYRWvh5usF-ANAx-sqV7_wp4ITLonEeL4BfBxzp9X606cDNwsF-yf6PUs2epLEJQIRs8iqKqZVC828F75DfKaLA7JJzupWAVYwzUfWDQo33RMUqeGpNR1sEhIeYthfhiut4H0gNW4hcNpoqNY_cBOwKPZG0_7jyrQLiaeoRyVu2-jPTxg-Ak7tlGS8dMw8SYw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/40 via-transparent to-transparent pointer-events-none"></div>
+<div class="absolute bottom-space-md left-space-md right-space-md flex items-center justify-between text-surface-container-lowest text-xs font-label-sm">
+<span class="backdrop-blur-md bg-inverse-surface/60 px-space-sm py-0.5 rounded">SF Studio Session</span>
+<span class="backdrop-blur-md bg-inverse-surface/60 px-space-sm py-0.5 rounded">2024 — 2025</span>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Priyanka Sharma</span>
+<span class="font-body-sm text-body-sm text-tertiary">Head of Design &amp; Creative Technologist</span>
+</div>
+<span class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-label-sm">
+              ∥
+            </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Key Stats Row -->
+<div class="mt-space-2xl pt-space-xl grid grid-cols-1 sm:grid-cols-3 gap-gutter bg-surface-container-low p-space-xl rounded-xl shadow-sm">
+<div class="flex flex-col gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary leading-none">$180M+</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-space-xs">Capital Raised</span>
+<p class="font-body-sm text-body-sm text-tertiary">Direct venture outcomes catalyzed for seed to Series B portfolios.</p>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary leading-none">12+</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-space-xs">Design Awards</span>
+<p class="font-body-sm text-body-sm text-tertiary">Awwwards SOTD, Apple Design Award Nominee, and FWA of the Day.</p>
+</div>
+<div class="flex flex-col gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-primary leading-none">8+ Years</span>
+<span class="font-headline-sm text-headline-sm text-on-surface mt-space-xs">Crafting Interfaces</span>
+<p class="font-body-sm text-body-sm text-tertiary">Bridging spatial logic, design systems architecture, and visual poetry.</p>
+</div>
+</div>
+</section>
+<!-- RECOGNITION TICKER / LOGOS -->
+<section class="w-full bg-surface-container py-space-xl">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-space-xl lg:px-margin flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary shrink-0">Trusted by founders &amp; teams at</span>
+<div class="flex flex-wrap items-center justify-center md:justify-end gap-space-xl opacity-75 grayscale hover:grayscale-0 transition-all duration-300">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tighter">stripe</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-wider">L I N E A R</span>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-normal font-serif">Notion Labs</span>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight font-medium">S E Q U O I A</span>
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tighter font-mono">▲ Vercel</span>
+</div>
+</div>
+</section>
+<!-- FEATURED CASE STUDIES & SELECTED WORK -->
+<section class="w-full max-w-7xl mx-auto px-margin-mobile md:px-space-xl lg:px-margin pt-space-3xl pb-space-2xl" id="selected-work">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md mb-space-2xl">
+<div>
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span class="material-symbols-outlined text-base">folder_open</span>
+<span>Index of Work (2022 — 2025)</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Selected Case Studies</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        In-depth breakdowns spanning architectural platforms, computational AI interfaces, and tactile luxury flagships.
+      </p>
+</div>
+<!-- Case Studies Stack -->
+<div class="flex flex-col gap-space-2xl">
+<!-- Project 1: Aether AI -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-md hover:shadow-xl transition-all duration-500 group">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 flex flex-col order-2 lg:order-1">
+<div class="flex flex-wrap gap-space-xs mb-space-md">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Design System</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">macOS Native</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">0→1 Product Strategy</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface group-hover:text-primary transition-colors mb-space-sm">
+              Aether AI — Autonomous Workspace for Teams
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg">
+              Engineered a canvas-first cognitive environment consolidating multi-agent LLM workflows. Designed zero-latency keyboard-centric interactions, tactile windowing primitives, and design tokens adopted across 40+ engineering squads.
+            </p>
+<div class="p-space-md bg-surface-container-low rounded-lg mb-space-lg flex items-center justify-between">
+<div>
+<span class="block font-headline-md text-headline-md text-primary">+340%</span>
+<span class="font-label-sm text-label-sm text-tertiary">User Activation in 90 Days</span>
+</div>
+<div class="text-right">
+<span class="block font-headline-md text-headline-md text-on-surface">&lt;14ms</span>
+<span class="font-label-sm text-label-sm text-tertiary">Interaction Latency Metric</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-primary hover:text-on-surface transition-colors" href="#inquiry">
+<span>View Full Case Study</span>
+<span class="material-symbols-outlined text-base">north_east</span>
+</a>
+<span class="inline-flex items-center gap-space-xs font-label-sm text-label-sm text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Shipped v2.4</span>
+</span>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2 overflow-hidden rounded-lg bg-surface-container relative">
+<img class="w-full h-80 md:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="A clean, ultra-refined macOS interface design for Aether AI workspace with multi-agent timeline streams, sleek dark and warm parchment panels, glowing data nodes, typography focused layout, editorial lighting and photorealistic laptop mockup." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYpBiAwz1Ps-UybNMfpKX9dC2AfWcoZ3VxpTEfLLbdwhyvyCtUHOECLnI9DBxTtHESCV7LBHrm2rtXjzqCoQbsYImuZP60c2XEBSBl-MHxIiUwPZiEoOUMzPqrjQ94CcQp_6BWjn6C2yNMOb_lvyUsS2nSBp2q0sQf-EB1YEVJaVlXpvPALpS6yWUbUrGEVpERJlp7YdHlyFpJ6053WAHscDJCwtH9Cz76joYlZyQ9XNSOqS0QugajGA"/>
+<div class="absolute top-space-md right-space-md bg-surface-container-lowest/90 backdrop-blur-md px-space-md py-space-xs rounded-full shadow-sm text-on-surface font-label-sm text-label-sm">
+              Live Prototype • Figma + React
+            </div>
+</div>
+</div>
+</article>
+<!-- Project 2: Komorebi Living -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-md hover:shadow-xl transition-all duration-500 group">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 overflow-hidden rounded-lg bg-surface-container relative">
+<img class="w-full h-80 md:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Minimalist Nordic-Japanese furniture gallery e-commerce concept with high aesthetic warm wood tones, washi paper lanterns, serene architectural photography, precise editorial typography, tactile shop UI layout with high contrast." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfpdVu1cxYEPUs0D1sY75rhVFJ0i9-RQQ3RHOW3Bv_3cGDyLVdD_3078I_Oua3qJBSBMhujJIB0JTQukDDcLL2sg_uIGTeqR-RW2XWi2b_ZgdVTra7XTpDYlsiAbVZvE2N8KCV4vc3mT6vXBW3kPM54eo5zsBWOXwsumdxkEf6PNkstvy8hdcppwGHE6bFAmtPKJXyMPFY3BvFLmsrQbpZitHfDjpWwm7Xfcs17tEr9Ju2A8nI7hIfrA"/>
+<div class="absolute top-space-md left-space-md bg-surface-container-lowest/90 backdrop-blur-md px-space-md py-space-xs rounded-full shadow-sm text-on-surface font-label-sm text-label-sm">
+              WebGL 3D Canvas • Headless Shopify
+            </div>
+</div>
+<div class="lg:col-span-5 flex flex-col">
+<div class="flex flex-wrap gap-space-xs mb-space-md">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Luxury E-Commerce</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">3D Spatial Room</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Art Direction</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface group-hover:text-primary transition-colors mb-space-sm">
+              Komorebi Living — Architectural Commerce
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg">
+              Conceived a digital sanctuary merging Japandi interior curation with real-time Three.js spatial modeling. Translated tactile materiality of ceramic glazes and timber grain into fluid digital touchpoints.
+            </p>
+<div class="p-space-md bg-surface-container-low rounded-lg mb-space-lg flex items-center justify-between">
+<div>
+<span class="block font-headline-md text-headline-md text-primary">$4.2M</span>
+<span class="font-label-sm text-label-sm text-tertiary">Q1 Gross Merchandise Value</span>
+</div>
+<div class="text-right">
+<span class="block font-headline-md text-headline-md text-on-surface">5.2 min</span>
+<span class="font-label-sm text-label-sm text-tertiary">Average Session Dwell</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-primary hover:text-on-surface transition-colors" href="#inquiry">
+<span>View Full Case Study</span>
+<span class="material-symbols-outlined text-base">north_east</span>
+</a>
+<span class="inline-flex items-center gap-space-xs font-label-sm text-label-sm text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Awwwards SOTD</span>
+</span>
+</div>
+</div>
+</div>
+</article>
+<!-- Project 3: Scribe Financial -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-md hover:shadow-xl transition-all duration-500 group">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-5 flex flex-col order-2 lg:order-1">
+<div class="flex flex-wrap gap-space-xs mb-space-md">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Fintech OS</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Data Visualization</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">B2B SaaS</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface group-hover:text-primary transition-colors mb-space-sm">
+              Scribe — Treasury &amp; Payments Operating System
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg">
+              Redesigned enterprise balance sweeps, yield allocation engines, and cross-border settlement dashboards. Transformed intimidating financial tables into intuitive, publication-grade analytical visual maps.
+            </p>
+<div class="p-space-md bg-surface-container-low rounded-lg mb-space-lg flex items-center justify-between">
+<div>
+<span class="block font-headline-md text-headline-md text-primary">$12B+</span>
+<span class="font-label-sm text-label-sm text-tertiary">Annualized Volume Monitored</span>
+</div>
+<div class="text-right">
+<span class="block font-headline-md text-headline-md text-on-surface">48%</span>
+<span class="font-label-sm text-label-sm text-tertiary">Reduction in Ops Tasks</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-primary hover:text-on-surface transition-colors" href="#inquiry">
+<span>View Full Case Study</span>
+<span class="material-symbols-outlined text-base">north_east</span>
+</a>
+<span class="inline-flex items-center gap-space-xs font-label-sm text-label-sm text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Enterprise Deployed</span>
+</span>
+</div>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2 overflow-hidden rounded-lg bg-surface-container relative">
+<img class="w-full h-80 md:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="High precision financial tech dashboard UI screen displaying liquidity forecast charts, warm monochrome aesthetics, minimalist micro-charts, yield allocation curves, crisp typography in Playfair and Plus Jakarta Sans styles." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkMrPdg2BdgWarFTtIOQIYRywE27XaxnkGYaFXVDLabioAdvCzyGordcEjbNBJNrC98AwvjrtbJ2SEhyZ2NHSPVxRuSR01OU-LsiVJoXHapx-JcO9O_3IttS2U8phK4pOKYdAEAPpC_oNNhX7DfNJbEkBVTcZ1AacM-oocWqIzoFUpDviP0f_WERfXQatz40DGUi67dDohCQ44pW-j7ZaA03Vzmr9fKnJRO1l5MCThtJh-zZPNkYiMgg"/>
+<div class="absolute top-space-md right-space-md bg-surface-container-lowest/90 backdrop-blur-md px-space-md py-space-xs rounded-full shadow-sm text-on-surface font-label-sm text-label-sm">
+              Design System • 140+ Components
+            </div>
+</div>
+</div>
+</article>
+<!-- Project 4: Verve Health -->
+<article class="bg-surface-container-lowest rounded-xl p-space-lg md:p-space-xl shadow-md hover:shadow-xl transition-all duration-500 group">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<div class="lg:col-span-7 overflow-hidden rounded-lg bg-surface-container relative">
+<img class="w-full h-80 md:h-[420px] object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Editorial iOS mobile health application UI layout displaying longevity biometric trackers, blood biomarker analysis, calming warm sand and terracotta visual accents, clean typography, elegant rounded cards on a ceramic desk." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdAH3zQeVmz6Grs3rdqSIiHMKUbA4l93g0OORjRBqRKgfPTjZIQut3Ot6kTYJaJ44g3lGBWCaguZzq3Ehb9syfjKlaASpDdq6RI6Erd0c16kCSXXCf9Jft5NCr3PkpMXQ_HatJkViVbX0Uwz0uurNxA_jNKWubrf-EdhrQoUMP-azrc68DyeXTjxkZZRtJMFCWxscR4KKX03hnubbsPflIzQFCVaXsaXH53EdtemsvkFMk6eMnqdoR_A"/>
+<div class="absolute top-space-md left-space-md bg-surface-container-lowest/90 backdrop-blur-md px-space-md py-space-xs rounded-full shadow-sm text-on-surface font-label-sm text-label-sm">
+              Mobile App • iOS &amp; WatchOS
+            </div>
+</div>
+<div class="lg:col-span-5 flex flex-col">
+<div class="flex flex-wrap gap-space-xs mb-space-md">
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Mobile Experience</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">HealthTech</span>
+<span class="px-space-sm py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Token Architecture</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-on-surface group-hover:text-primary transition-colors mb-space-sm">
+              Verve Health — Longevity &amp; Preventive Diagnostics
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg">
+              Designed a calming, non-alarmist diagnostics app for predictive biomarkers and circadian health. Built a synchronized multi-device token architecture for mobile and Apple Watch glanceability.
+            </p>
+<div class="p-space-md bg-surface-container-low rounded-lg mb-space-lg flex items-center justify-between">
+<div>
+<span class="block font-headline-md text-headline-md text-primary">4.9 ★</span>
+<span class="font-label-sm text-label-sm text-tertiary">App Store Rating (18k+ reviews)</span>
+</div>
+<div class="text-right">
+<span class="block font-headline-md text-headline-md text-on-surface">62%</span>
+<span class="font-label-sm text-label-sm text-tertiary">Daily Habit Retention</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md">
+<a class="inline-flex items-center gap-space-xs font-label-lg text-label-lg text-primary hover:text-on-surface transition-colors" href="#inquiry">
+<span>View Full Case Study</span>
+<span class="material-symbols-outlined text-base">north_east</span>
+</a>
+<span class="inline-flex items-center gap-space-xs font-label-sm text-label-sm text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Featured in Health Today</span>
+</span>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- DESIGN PHILOSOPHY & PROCESS -->
+<section class="w-full bg-surface-container-low py-space-3xl">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-space-xl lg:px-margin">
+<!-- Philosophy Quotation Callout -->
+<div class="bg-surface-container-lowest p-space-xl md:p-space-2xl rounded-2xl shadow-sm mb-space-2xl relative overflow-hidden">
+<div class="absolute -top-10 -left-6 text-surface-container text-9xl font-headline-xl select-none opacity-40 font-serif leading-none">“</div>
+<div class="relative z-10 max-w-3xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-space-sm block">Design Ethos</span>
+<blockquote class="font-headline-lg text-headline-lg text-on-surface italic leading-snug mb-space-md">
+            “Good design is quiet confidence. Great design makes complex systems feel effortless and poetic.”
+          </blockquote>
+<p class="font-body-md text-body-md text-tertiary">
+            Every interface decision should withstand scrutiny on both a mathematical level (grid, cadence, accessibility) and an emotive level (resonance, tactile joy, restraint).
+          </p>
+</div>
+</div>
+<!-- 4-Step Pillars -->
+<div class="flex flex-col gap-space-md mb-space-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-tertiary">Rigorous Methodology</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">The 4-Pillar Studio Process</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300">
+<div>
+<span class="font-headline-xl text-headline-xl text-primary block mb-space-sm font-serif">01</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Immersion &amp; Synthesis</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Deconstructing business models, technical constraints, and user frictions. Translating fuzzy requirements into sharp strategic roadmaps.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">psychology</span>
+<span>Synthesize Discovery</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300">
+<div>
+<span class="font-headline-xl text-headline-xl text-primary block mb-space-sm font-serif">02</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Architecture &amp; Spatial Systems</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Building information hierarchy, robust mental models, navigation taxonomy, and rapid low-fidelity structural validation.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">schema</span>
+<span>Information Blueprints</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300">
+<div>
+<span class="font-headline-xl text-headline-xl text-primary block mb-space-sm font-serif">03</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">High-Fidelity &amp; Micro-interactions</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Infusing bespoke typography, tactile haptics, spring physics, and interactive states that make the screen come alive.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">auto_awesome</span>
+<span>Craft &amp; Delight</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:-translate-y-1 transition-transform duration-300">
+<div>
+<span class="font-headline-xl text-headline-xl text-primary block mb-space-sm font-serif">04</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-space-xs">Scalable Systems &amp; Hand-off</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              Tokenized component libraries, zero-drift code pairing, interactive Storybook setups, and comprehensive engineering docs.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm">token</span>
+<span>Production Parity</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- HONORS & TESTIMONIALS -->
+<section class="w-full max-w-7xl mx-auto px-margin-mobile md:px-space-xl lg:px-margin py-space-3xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Honors Column (5 cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-space-xs block">Accolades &amp; Jury Selects</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Recognition</h2>
+</div>
+<div class="flex flex-col gap-space-md">
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">emoji_events</span>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">Awwwards Site of the Day</span>
+<span class="font-body-sm text-body-sm text-tertiary">Komorebi Living Flagship Experience</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary">2024</span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">military_tech</span>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">Apple Design Award Nominee</span>
+<span class="font-body-sm text-body-sm text-tertiary">Verve Health iOS &amp; Watch Platform</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary">2023</span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">workspace_premium</span>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">FWA of the Day</span>
+<span class="font-body-sm text-body-sm text-tertiary">Aether Autonomous Workspace Launch</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary">2023</span>
+</div>
+<div class="p-space-md bg-surface-container-low rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">star</span>
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">Fast Company Innovation by Design</span>
+<span class="font-body-sm text-body-sm text-tertiary">Honorable Mention: Digital Products</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary">2022</span>
+</div>
+</div>
+</div>
+<!-- Testimonials Column (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary mb-space-xs block">Endorsements</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Collaborator Voices</h2>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Quote 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<p class="font-body-md text-body-md text-on-surface mb-space-md italic">
+              “Priyanka possesses that exceedingly rare trifecta: deeply rooted taste, relentless systems architecture, and extreme velocity. She redefined how our engineering and product teams interface with design.”
+            </p>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">Marcus Vance</span>
+<span class="font-body-sm text-body-sm text-tertiary">VP of Product &amp; AI Systems, Aether</span>
+</div>
+<span class="text-primary font-serif text-xl">—</span>
+</div>
+</div>
+<!-- Quote 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<p class="font-body-md text-body-md text-on-surface mb-space-md italic">
+              “She took our complex multi-entity fintech protocol and made it feel as effortless as a fine watch. Every stakeholder and venture partner singled out the interface as our core differentiator.”
+            </p>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">Eleni Katsaros</span>
+<span class="font-body-sm text-body-sm text-tertiary">Founder &amp; CEO, Scribe Financial</span>
+</div>
+<span class="text-primary font-serif text-xl">—</span>
+</div>
+</div>
+<!-- Quote 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<p class="font-body-md text-body-md text-on-surface mb-space-md italic">
+              “Working alongside Priyanka feels like a masterclass in typographic discipline and emotional UI. She creates work that doesn't age.”
+            </p>
+<div class="flex items-center justify-between">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface block">Julien Moreau</span>
+<span class="font-body-sm text-body-sm text-tertiary">Executive Creative Director, Atelier Nord</span>
+</div>
+<span class="text-primary font-serif text-xl">—</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INTERACTIVE INQUIRY / CONTACT SECTION -->
+<section class="w-full bg-surface-container-high py-space-3xl relative" id="inquiry">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-space-xl lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Left: Context & Direct Contact -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center gap-space-xs px-space-md py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm mb-space-md">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Inquiries Open for Q3 &amp; Q4</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface mb-space-md leading-tight">
+              Have an ambitious project in mind? Let’s build something remarkable together.
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-xl">
+              Currently advising venture-backed startups and crafting bespoke product architectures. Let’s discuss timing, scopes, or technical advisory roles.
+            </p>
+<!-- Direct Email Copy Widget -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm mb-space-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span class="font-headline-sm text-headline-sm text-on-surface" id="email-address">hello@priyanka.design</span>
+</div>
+<button class="px-space-md py-space-xs bg-surface-container hover:bg-surface-variant text-on-surface font-label-sm text-label-sm rounded-lg transition-colors cursor-pointer" id="copy-btn" onclick="navigator.clipboard.writeText('hello@priyanka.design'); document.getElementById('copy-feedback').innerText='Copied to clipboard!'; setTimeout(() =&gt; { document.getElementById('copy-feedback').innerText=''; }, 2500);">
+                Copy
+              </button>
+</div>
+<p class="font-label-sm text-label-sm text-primary mb-space-lg h-4" id="copy-feedback"></p>
+</div>
+<!-- Studio Metadata -->
+<div class="flex flex-col gap-space-sm pt-space-lg">
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-tertiary">
+<span class="material-symbols-outlined text-base">public</span>
+<span>San Francisco (PST · UTC-7) • London (GMT · UTC+0)</span>
+</div>
+<div class="flex items-center gap-space-lg font-label-sm text-label-sm text-on-surface">
+<a class="hover:text-primary transition-colors flex items-center gap-space-xs" href="#">
+<span>PGP Public Key</span>
+<span class="material-symbols-outlined text-xs">key</span>
+</a>
+<a class="hover:text-primary transition-colors flex items-center gap-space-xs" href="#">
+<span>vCard Contact</span>
+<span class="material-symbols-outlined text-xs">contacts</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Right: Interactive Consultation Inquiry Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-space-lg md:p-space-2xl rounded-2xl shadow-xl">
+<form class="flex flex-col gap-space-lg" id="project-form" onsubmit="event.preventDefault(); document.getElementById('form-success').classList.remove('hidden'); document.getElementById('form-inputs').classList.add('hidden');">
+<div class="flex flex-col gap-space-lg" id="form-inputs">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Your Name</label>
+<input class="w-full px-space-md py-space-sm bg-surface-container-low text-on-surface rounded-lg placeholder-tertiary focus:outline-none focus:bg-surface-container" placeholder="Jane Doe" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Work Email</label>
+<input class="w-full px-space-md py-space-sm bg-surface-container-low text-on-surface rounded-lg placeholder-tertiary focus:outline-none focus:bg-surface-container" placeholder="jane@company.com" required="" type="email"/>
+</div>
+</div>
+<!-- Budget Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Estimated Project Budget</label>
+<div class="grid grid-cols-3 gap-space-sm" id="budget-selector">
+<label class="flex flex-col items-center justify-center p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors has-[:checked]:bg-primary has-[:checked]:text-on-primary">
+<input checked="" class="sr-only" name="budget" type="radio" value="15k-30k"/>
+<span class="font-label-lg text-label-lg font-semibold">$15k – $30k</span>
+<span class="font-label-sm text-label-sm opacity-80">Sprint / MVP</span>
+</label>
+<label class="flex flex-col items-center justify-center p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors has-[:checked]:bg-primary has-[:checked]:text-on-primary">
+<input class="sr-only" name="budget" type="radio" value="30k-60k"/>
+<span class="font-label-lg text-label-lg font-semibold">$30k – $60k</span>
+<span class="font-label-sm text-label-sm opacity-80">Full System / 0→1</span>
+</label>
+<label class="flex flex-col items-center justify-center p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors has-[:checked]:bg-primary has-[:checked]:text-on-primary">
+<input class="sr-only" name="budget" type="radio" value="60k+"/>
+<span class="font-label-lg text-label-lg font-semibold">$60k+</span>
+<span class="font-label-sm text-label-sm opacity-80">Retainer / Flagship</span>
+</label>
+</div>
+</div>
+<!-- Project Type Chips -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Scope of Engagement</label>
+<div class="flex flex-wrap gap-space-xs">
+<label class="px-space-md py-space-xs rounded-full bg-surface-container-low hover:bg-surface-container cursor-pointer font-label-sm text-label-sm has-[:checked]:bg-on-surface has-[:checked]:text-inverse-on-surface">
+<input checked="" class="sr-only" type="checkbox"/>
+<span>Product Architecture</span>
+</label>
+<label class="px-space-md py-space-xs rounded-full bg-surface-container-low hover:bg-surface-container cursor-pointer font-label-sm text-label-sm has-[:checked]:bg-on-surface has-[:checked]:text-inverse-on-surface">
+<input checked="" class="sr-only" type="checkbox"/>
+<span>Design System</span>
+</label>
+<label class="px-space-md py-space-xs rounded-full bg-surface-container-low hover:bg-surface-container cursor-pointer font-label-sm text-label-sm has-[:checked]:bg-on-surface has-[:checked]:text-inverse-on-surface">
+<input class="sr-only" type="checkbox"/>
+<span>Brand &amp; Identity</span>
+</label>
+<label class="px-space-md py-space-xs rounded-full bg-surface-container-low hover:bg-surface-container cursor-pointer font-label-sm text-label-sm has-[:checked]:bg-on-surface has-[:checked]:text-inverse-on-surface">
+<input class="sr-only" type="checkbox"/>
+<span>Quarterly Advisory</span>
+</label>
+</div>
+</div>
+<!-- Project Summary -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">Tell me about the problem &amp; timeline</label>
+<textarea class="w-full px-space-md py-space-sm bg-surface-container-low text-on-surface rounded-lg placeholder-tertiary focus:outline-none focus:bg-surface-container" placeholder="Overview of the product vision, goals, and target delivery timeframe..." required="" rows="4"></textarea>
+</div>
+<!-- Submit Button -->
+<button class="w-full bg-primary text-on-primary py-space-md px-space-lg rounded-lg hover:bg-primary-container transition-colors font-label-lg text-label-lg flex items-center justify-center gap-space-sm shadow-md cursor-pointer" type="submit">
+<span>Transmit Project Inquiry</span>
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+<!-- Success State -->
+<div class="hidden flex flex-col items-center justify-center text-center py-space-2xl gap-space-sm" id="form-success">
+<span class="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center material-symbols-outlined text-2xl">check</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Inquiry Received</h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+                Thank you for reaching out. I review all project proposals personally and will respond within 24 business hours.
+              </p>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low mt-space-3xl"><div class="max-w-7xl mx-auto px-margin-mobile md:px-space-xl lg:px-margin py-space-2xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter items-start pb-space-xl"><div class="md:col-span-6 flex flex-col gap-space-sm"><span class="font-headline-md text-headline-md text-on-surface">Priyanka</span><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Senior Product Designer &amp; Art Director specializing in publication-grade digital systems, design architecture, and high-impact brand identities.</p><div class="flex items-center gap-space-xs font-label-sm text-label-sm text-tertiary mt-space-xs"><span class="material-symbols-outlined text-base">schedule</span><span>Local Studio Time:</span><span class="text-on-surface font-semibold">14:32 IST (UTC +5:30)</span></div></div><div class="md:col-span-6 flex flex-col md:items-end justify-between h-full gap-space-lg"><div class="flex flex-col md:items-end gap-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Network &amp; Indices</span><div class="flex flex-wrap gap-space-lg font-label-lg text-label-lg text-on-surface-variant"><a class="hover:text-primary transition-colors" href="#">Twitter / X</a><a class="hover:text-primary transition-colors" href="#">ReadCV</a><a class="hover:text-primary transition-colors" href="#">LinkedIn</a><a class="hover:text-primary transition-colors" href="#">Dribbble</a></div></div><div class="flex items-center gap-space-sm text-on-surface-variant font-label-sm text-label-sm"><span class="w-2 h-2 rounded-full bg-primary"></span><span>Available for commissions &amp; advisory</span></div></div></div><div class="pt-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-tertiary"><p>© 2025 Priyanka. Designed with typographic restraint &amp; algorithmic care.</p><div class="flex items-center gap-space-lg font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" href="#">Colophon</a><a class="hover:text-on-surface transition-colors" href="#">RSS / Feed</a><a class="hover:text-on-surface transition-colors" href="#">Back to top ↑</a></div></div></div></footer></body></html>
